@@ -16,7 +16,7 @@ import com.proyecto.servicios.UsuarioServicio;
 public class ControladorUsuario {
 	@Autowired
 	private UsuarioServicio usuarioservicio;
-	
+
 	@RequestMapping("/registrarUsuario")
 	public String MostrarFormUsuario(@ModelAttribute("tpusuario") Usuario usuario,
 			Model modelo){
@@ -30,7 +30,6 @@ public class ControladorUsuario {
 			usuario.setNombre("")	;
 			usuario.setDescripcion("");
 			}  //fin del if....
-		
 		//realizamos el listado de tipocliente....
 		List<Usuario> listado=new ArrayList<Usuario>();
 		listado=usuarioservicio.ListadoUsuario();
