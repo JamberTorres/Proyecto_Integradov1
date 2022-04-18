@@ -27,7 +27,6 @@ public class ControladorPropietario {
 	@Autowired
 	private DepartamentoServicio departamentoServicio;
 	
-	
 	@RequestMapping("/RegistrarPropiertario")
 	public String mostraFormPropietario (@ModelAttribute("propietario")Propietario propietario,Model modelo) {
 	
