@@ -4,7 +4,7 @@
 <!-- <class></class> -->	
 	<properties>
 <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/bd_proyecto_sexto" />
+<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/bd_proyecto_sexto1" />
 <property name="javax.persistence.jdbc.user" value="root" />
 <property name="javax.persistence.jdbc.password" value="" />
 <!--    hibernate.hbm2ddl.auto reemplaza ddl  create permite crear tablas y borrar datos    -->
@@ -14,7 +14,6 @@
 <property name="hibernate.show_sql" value="true"/>
 <property name="packagesToScan" value="com.proyecto.*" />
 </properties>
-	
 	
 	</persistence-unit>
 </persistence>

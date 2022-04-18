@@ -22,7 +22,7 @@ ${mensaje}
 <nav class="navbar navbar-light bg-info">
   <a class="navbar-brand" href="conttdepartamento/registrarDepartamento">Registrar departamento</a>
   <a class="navbar-brand" href="conttusuario/registrarUsuario" style="text-decoration: none;">Registrar Usuario</a>
-  <a class="navbar-brand" href="conRegistrarEmpleado/RegistrarEmpleado" style="text-decoration: none;">Registrar  Propietario</a>
+   <a class="navbar-brand" href="conRegistrarPropietario/RegistrarPropiertario" style="text-decoration: none;">Registrar  Propietario</a>
 </nav>
 
 </h2>

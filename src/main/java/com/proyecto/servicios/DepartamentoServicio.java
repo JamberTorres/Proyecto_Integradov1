@@ -24,5 +24,4 @@ public class DepartamentoServicio {
 		List<Departamento> listar=idepartamento.findAll();
 		return listar;	
 	}   //fin del metodo
-	
 }

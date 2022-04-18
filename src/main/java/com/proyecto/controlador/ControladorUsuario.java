@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.proyecto.modelo.Empleado;
+import com.proyecto.modelo.Propietario;
 import com.proyecto.modelo.Usuario;
 import com.proyecto.servicios.UsuarioServicio;
 @Controller
@@ -48,4 +48,5 @@ public class ControladorUsuario {
 		return "FormUsuario";
 	}	
 }
+
 
