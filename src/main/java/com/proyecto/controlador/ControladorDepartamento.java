@@ -23,7 +23,6 @@ public class ControladorDepartamento {
 	@RequestMapping("/registrarDepartamento")
 	public String MostrarFormularioDepartamento(@ModelAttribute("tpdepartamento") Departamento tipodepartamento,
 			Model modelo){
-
 		String mensaje="";
 		if(tipodepartamento.getDescripcion()!=null){
 
