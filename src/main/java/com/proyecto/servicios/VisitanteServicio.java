@@ -14,7 +14,6 @@ import com.proyecto.modelo.Visitante;
 @Service
 @Transactional
 public class VisitanteServicio {
-
 	@Autowired
 	private IVisitante ivisitante;
 	

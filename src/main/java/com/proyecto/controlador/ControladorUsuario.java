@@ -44,7 +44,7 @@ public class ControladorUsuario {
 		usuarioservicio.EliminarUsuario(cod);
 		List<Usuario> listarusuario=new ArrayList<Usuario>();
 		listarusuario=usuarioservicio.ListadoUsuario();
-		modelo.addAttribute("listadeempleado", listarusuario);
+		modelo.addAttribute("listadepropietario", listarusuario);
 		return "FormUsuario";
 	}	
 }

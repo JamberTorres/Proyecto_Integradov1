@@ -31,12 +31,10 @@ private String SegApellido;
 	private String Genero;		
 	@Column(name="Estado")
 	private String Estado;	
-	@ManyToOne
-	@JoinColumn(name="Id")
-	private Propietario propietario;
+
 	
 	public Visitante(int idVisitante, String nombre, String apellido, String segApellido, String tipoDocumento,
-			String nroDocumento, String genero, String estado, Propietario propietario) {
+			String nroDocumento, String genero, String estado) {
 		this.idVisitante = idVisitante;
 		this.Nombre = nombre;
 		this.Apellido = apellido;
@@ -45,7 +43,7 @@ private String SegApellido;
 		this.nroDocumento = nroDocumento;
 		this.Genero = genero;
 		this.Estado = estado;
-		this.propietario = propietario;
+	
 	}
 	public Visitante() {
 		
@@ -98,12 +96,7 @@ private String SegApellido;
 	public void setEstado(String estado) {
 		Estado = estado;
 	}
-	public Propietario getPropietario() {
-		return propietario;
-	}
-	public void setPropietario(Propietario propietario) {
-		this.propietario = propietario;
-	}
+	
 	
 	
 	

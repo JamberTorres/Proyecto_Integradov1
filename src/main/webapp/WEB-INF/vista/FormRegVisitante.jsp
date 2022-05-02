@@ -34,13 +34,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <br/>
 <form:label path="Estado">ingrese Estado</form:label>
 <form:input path="Estado"/>
-<br/>
-<form:select path="propietario" id="propietario">
-<form:option value="none" label="seleccione propietario"  ></form:option>
-        <form:options items="${propietario}" itemValue="id"  itemLabel="Nombre"/>
-</form:select>
 <br/><br>
-
 <button type="submit" class="btn btn-success" value="RegistrarVisitante">Registrar Visitante</button>
 </form:form>
 <br>
@@ -51,13 +45,12 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <th>apellido</th><th>segApellido</th>
 <th>tipoDocumento</th><th>nroDocumento</th>
 <th>genero</th><th>estado</th>
-<th>propietario</th><th>acciones</th>
+<th>acciones</th>
 </tr>
 <c:forEach items="${listadevisitante}" var="visitante">
 <tr>
 <td>${visitante.idVisitante}</td><td>${visitante.nombre}</td><td>${visitante.apellido}</td><td>${visitante.segApellido}</td>
 <td>${visitante.tipoDocumento}</td><td>${visitante.nroDocumento}</td><td>${visitante.genero}</td><td>${visitante.estado}</td>
-<td>${visitante.propietario.nombre}</td>
 <td><a href="EliminarVisitante?cod=${visitante.idVisitante}" style="text-decoration: none;">Eliminar </a>|
 <a href="EditarVisitante?cod=${visitante.idVisitante}" style="text-decoration: none;">Actualizar </a></td>
 </c:forEach>

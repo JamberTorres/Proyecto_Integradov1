@@ -36,12 +36,6 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <br/>
 <form:label path="Estado">ingrese Estado</form:label>
 <form:input path="Estado"/>
-<br/>
-<form:select path="propietario" id="propietario">
-<form:option value="none" label="${visitante.propietario.nombre}"  ></form:option>
-        <form:options items="${propietario}"  
-             itemValue="id"      itemLabel="nombre"/>
-</form:select>
 <br><br>
 
 <button type="submit" class="btn btn-success" value="Actualizar">Actualizar Visitante</button>
