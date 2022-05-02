@@ -34,9 +34,10 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <form:label path="Nacionalidad">nacionalidad</form:label>
 <form:input path="Nacionalidad"/>
 <br>
-<form:label path="Estado">estado</form:label>
-<form:input path="Estado"/>
-<br>
+<form:label path="Estado">ingrese Estado</form:label>
+<form:radiobutton path="Estado" value="Activo"/>Activo	
+<form:radiobutton path="Estado" value="No Activo"/>No Activo
+<br/>
 <form:select path="departamento" id="departamento">
 <form:option value="none" label="${propietario.departamento.descripcion}"  ></form:option>
         <form:options items="${departamento}"  
