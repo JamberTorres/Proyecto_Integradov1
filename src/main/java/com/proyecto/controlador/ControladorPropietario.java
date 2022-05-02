@@ -67,22 +67,22 @@ public class ControladorPropietario {
 		public String EliminarPropietario(@ModelAttribute("propietario")
 		Propietario propietario,@RequestParam("cod") int cod,Model modelo) {
 			propietarioServicio.EliminarPropietario(cod);
-			List<Propietario> listarempleado=new ArrayList<Propietario>();
-			listarempleado=propietarioServicio.listadoPropietario();
-			modelo.addAttribute("listadeempleado", listarempleado);
-			return "FormRegEmpleado";
+			List<Propietario> listarpropietario=new ArrayList<Propietario>();
+			listarpropietario=propietarioServicio.listadoPropietario();
+			modelo.addAttribute("listadepropietario", listarpropietario);
+			return "FormRegPropietario";
 		}//fin del metodo eliminar empleado 
 
 		//metodo actualizarcliente
-		@RequestMapping("/EditarEmpleado")
+		@RequestMapping("/EditarPropietario")
 		public String EditarPropietario(@ModelAttribute("propietario") Propietario propietario,
 				@RequestParam("cod") int cod,Model modelo) {
 			//aplicamos el objeto empleadoserviicio
 			//instanciamos la clase
 			Propietario pro=new  Propietario();
 			pro=propietarioServicio.EditarPropietario(cod);
-			modelo.addAttribute("empleado", pro);
+			modelo.addAttribute("propietario", pro);
 			//retomamos  a la vista 
-			return("FormEditarEmpleado");
+			return("FormEditarPropietario");
 			}
 	}
