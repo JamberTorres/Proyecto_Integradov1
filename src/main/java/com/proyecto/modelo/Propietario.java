@@ -109,6 +109,4 @@ private String SegundoApellido;
 		this.departamento = departamento;
 	}	
 	
-	
-	
 }
