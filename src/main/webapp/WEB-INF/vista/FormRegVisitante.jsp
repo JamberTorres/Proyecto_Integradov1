@@ -33,7 +33,8 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <form:input path="Genero"/>
 <br/>
 <form:label path="Estado">ingrese Estado</form:label>
-<form:input path="Estado"/>
+<form:radiobutton path="Estado" value="Activo"/>Activo	
+<form:radiobutton path="Estado" value="No Activo"/>No Activo
 <br/><br>
 <button type="submit" class="btn btn-success" value="RegistrarVisitante">Registrar Visitante</button>
 </form:form>

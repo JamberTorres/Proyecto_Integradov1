@@ -49,7 +49,11 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
 <td>${tpdepartamento.IDdepart}</td><td>${tpdepartamento.descripcion}</td><td>${tpdepartamento.piso}</td>
 <td>${tpdepartamento.metroCuadrados}</td><td>${tpdepartamento.domitorios}</td><td>${tpdepartamento.baños}</td>
 <td>${tpdepartamento.años}</td>
+<td><a href="EliminarDepartamento?cod=${tpdepartamento.IDdepart}" style="text-decoration: none;">Eliminar </a>|
+<a href="EditarDepartamento?cod=${tpdepartamento.IDdepart}" style="text-decoration: none;">Actualizar </a></td>
 </c:forEach>
-</table></center>
+</table>
+
+</center>
 </body>
 </html>

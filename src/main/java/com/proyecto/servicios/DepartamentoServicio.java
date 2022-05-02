@@ -24,4 +24,13 @@ public class DepartamentoServicio {
 		List<Departamento> listar=idepartamento.findAll();
 		return listar;	
 	}   //fin del metodo
+	
+	public Departamento EditarDepartamento(int cod) {
+		return 	idepartamento.findById(cod).get();
+		   }
+
+		public String EliminarDepartamento(int cod) {
+			idepartamento.deleteById(cod);
+		return "departamento eliminado";
+		}
 }
